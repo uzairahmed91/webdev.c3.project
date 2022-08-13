@@ -148,8 +148,8 @@ app.get("/posts/all",authenticationMiddleware,(req,res)=>{
      })
 })
 
-app.listen(3000, () => {
-    console.log("Server is listening")
+app.listen(process.env.PORT, () => {
+    console.log("Server is listening"+ process.env.PORT)
 })
 
 // In case tailwind error occurs
