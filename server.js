@@ -148,12 +148,11 @@ app.get("/posts/all",authenticationMiddleware,(req,res)=>{
      })
 })
 
-// app.listen(process.env.PORT, () => {
-//     console.log("Server is listening"+ process.env.PORT)
-// })
-app.listen(3000, () => {
-    console.log("Server is listening")
+app.listen(process.env.PORT, () => {
+    console.log("Server is listening"+ process.env.PORT)
 })
-
+// app.listen(3000, () => {
+//     console.log("Server is listening")
+// })
 // In case tailwind error occurs
 // https://stackoverflow.com/questions/68613313/how-do-i-fix-tailwindcss-cli-from-throwing-typeerror-object-fromentries-is-not
